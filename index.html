@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS-TEST1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+           <h3>Hello!</h3> 
+        </div>
+
+        <div class="row">
+            <!--    Giriş Formu    --->
+            <div class="login-form">
+                <h2>LOGIN</h2>
+
+
+              <form autocomplete="off">
+
+                    <input type="email" name="login-ml" id="login-ml" required placeholder="Enter Your Email">
+
+
+                    <input type="password" name="login-pw" id="login-pw" required placeholder="Enter Your Password">
+
+
+                    <div class="login-row">
+                        <label for="login-chk">
+                            <input type="checkbox" name="login-chk" id="login-chk">
+                            Remember Password
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p>Or login with</p>
+                    <div class="login-social">
+                        <a href="#" id="fb">Facebook</a>
+                        <a href="#" id="gg">Google</a>
+                        
+                    </div>
+                    <p>Don't have account? <a href="#" class="switch">Register Now</a></p>
+              </form>
+            </div>
+
+
+
+            <!-- Kayıt Formu       --->
+
+            <div class="register-form">
+                <h2>REGISTER</h2>
+
+
+              <form autocomplete="off">
+
+                <input type="name" name="register-name" id="register-name" required placeholder="Enter Your Full Name">
+
+                    <input type="email" name="register-ml" id="register-ml" required placeholder="Enter Your Email">  
+
+                    <input type="password" name="register-pw" id="register-pw" required placeholder="Enter Your Password">
+
+                    <input type="password" name="register-cfpw" id="register-cfpw" required placeholder="Confirm Your Password">
+
+                    <div class="register-row">
+                        <div class="gender">
+                            <label for="male">
+                                <input type="radio" name="gender" id="male" checked>
+                                Male
+                            </label>
+                            <label for="female">
+                                <input type="radio" name="gender" id="female" >
+                                Female
+                            </label>
+                        </div>
+                        <input type="date" name="register-date" id="register-date" required>
+                    </div>
+                    <button type="submit">Register</button>
+                  
+                    <p>You have an account? <a href="#" class="switch">Login Now</a></p>
+              </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js">
+  
+    </script>
+</body>
+</html>
